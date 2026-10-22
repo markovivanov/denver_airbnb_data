@@ -1,0 +1,67 @@
+{
+  "provider": "Inside Airbnb",
+  "source_page": "https://insideairbnb.com/get-the-data/",
+  "license": "Creative Commons Attribution 4.0 International",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "release_label": "2026-06-30",
+  "downloaded_on": "2026-09-08",
+  "listing_last_scraped_values": [
+    "2026-06-30",
+    "2026-07-02"
+  ],
+  "raw_listings": 4939,
+  "raw_reviews": 354741,
+  "raw_reviews_without_matching_detailed_listing": 95,
+  "raw_review_date_min": "2008-08-28",
+  "raw_review_date_max": "2026-06-30",
+  "eligible_review_period": [
+    "2025-07-01",
+    "2026-06-30"
+  ],
+  "eligible_reviews": 62341,
+  "sample_reviews": 10000,
+  "sample_seed": 42,
+  "sample_listing_count": 2459,
+  "listing_fields": {
+    "id": "listing_id",
+    "name": "name",
+    "neighbourhood_cleansed": "neighbourhood",
+    "room_type": "room_type",
+    "accommodates": "accommodates",
+    "bedrooms": "bedrooms",
+    "price": "price",
+    "minimum_nights": "minimum_nights",
+    "number_of_reviews": "number_of_reviews",
+    "availability_365": "availability_365",
+    "review_scores_rating": "overall_rating",
+    "review_scores_cleanliness": "cleanliness_rating",
+    "review_scores_location": "location_rating",
+    "review_scores_value": "value_rating",
+    "latitude": "latitude",
+    "longitude": "longitude"
+  },
+  "review_changes": "Selected recent nonblank reviews with a matching detailed listing; random sample without replacement; removed reviewer identifiers and names; decoded HTML entities, removed tags, normalized whitespace; renamed columns; sorted by date and review ID.",
+  "pandas_version": "3.0.5",
+  "sources": {
+    "listings.csv.gz": {
+      "url": "https://data.insideairbnb.com/united-states/co/denver/2026-06-30/data/listings.csv.gz",
+      "bytes": 3234138,
+      "sha256": "215edeed59c296b80971fad007d3dedb4f28cd532706fcd662713985b7c1c37f"
+    },
+    "reviews.csv.gz": {
+      "url": "https://data.insideairbnb.com/united-states/co/denver/2026-06-30/data/reviews.csv.gz",
+      "bytes": 35109538,
+      "sha256": "658cfa67af60af2956f4b0d19331525f8c1348ca2b8caa821792b1195da8e191"
+    }
+  },
+  "classroom_files": {
+    "denver_listings.csv": {
+      "bytes": 735340,
+      "sha256": "5961851aabdb72ab994fe50aa66376ef961ac0cb020e3d55d37c239ddcd26ecf"
+    },
+    "denver_reviews_sample.csv": {
+      "bytes": 2636299,
+      "sha256": "01f64d8ae3a28c3a8026dd2575481d4a8f62ba84b47620c32e081d363742de7c"
+    }
+  }
+}
